@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container .menu {
+            width: 20%;
+            float: left;
+        }
+        .container .menu p {
+            box-shadow: 0 0 1px black;
+            padding: 5px 2px;
+            background-color: rgb(174, 236, 236);
+            margin-top: 10px;
+        }
+        .container .effect {
+            float: left;
+            width: 70%;
+        }
+        .container .effect h1 {
+            margin: 25px 40px;
+            font-size: 50px;
+        }
+        .container .effect p{
+            margin-left: 40px;
+            font-size: 22px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+        }
+        @media only screen and (max-width:800px){
+            .container .menu,
+            .container .effect{
+                width: 100%;
+            }
+            .container .effect h1 ,
+            .container .effect p,
+            .container .menu{
+                margin-left: 10px;
+            }
+        }
+        @media only screen and (max-width:1200px){
+            .container .effect h1 {
+            font-size: 40px;
+        }
+        .container .effect p{
+            font-size: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <p>Menu-item 1</p>
+            <p>Menu-item 2</p>
+            <p>Menu-item 3</p>
+            <p>Menu-item 4</p>
+            <p>Menu-item 5</p>
+        </div>
+        <div class="effect">
+            <h1>
+                Resize the browser window to see the effect!
+            </h1>
+            <p>
+                This example shows a menu that will float to the left of the page if the viewport is 480 pixels
+                wide or wider. If the viewport is less than 480 pixel, the menu will be on top of the content.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

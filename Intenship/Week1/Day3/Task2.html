@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        *{
+            background-color: gray;
+        }
+        .container .item1 {
+            grid-area: header;
+            background-color: rgb(168, 43, 226);
+        }
+        .container .item2 {
+            grid-area: Sidebar;
+            background-color: aqua;
+            width: auto;
+            height: 330px;
+            line-height: 300px;
+        }
+        .container .item3{
+            grid-area: center;
+            background-color: blue;
+            line-height: 200px;
+        }
+        .container .item4{
+            grid-area: right;
+            background-color: rgba(0, 0, 255, 0.671);
+            line-height: 50px;
+        }
+        .container .item5{
+            grid-area: left;
+            background-color: rgba(0, 0, 255, 0.486);
+            line-height: 50px;
+        }
+        .container .item6{
+            grid-area: footer;
+            background-color: rgb(168, 43, 226);
+        }
+        .container div {
+            padding: 30px;
+            border: 3px solid black;
+            border-radius: 1px;
+            box-shadow: 2px 2px 20px black;
+            color: white;
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+                'header header header header header'
+                'Sidebar center center center center' 
+                'Sidebar right right left left' 
+                'footer footer footer footer footer';
+            gap: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">sidebar</div>
+        <div class="item3">Content-1</div>
+        <div class="item4">Content-2</div>
+        <div class="item5">Content-3</div>
+        <div class="item6">footer</div>
+    </div>
+</body>
+</html>

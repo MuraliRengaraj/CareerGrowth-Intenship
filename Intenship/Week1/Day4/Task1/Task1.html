@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .container .head {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .container .head .head-first-line,
+        .container .head .head-second-line {
+            font-size: 2rem;
+            padding: 1.5px;
+        }
+        .container .head .head-para {
+            padding-top: 1rem;
+        }
+        
+        .container .content{
+            width: 20rem;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 10px black;
+        }
+        .container .content-line {
+            font-size: 1.5rem;
+            padding: 1rem 1rem;
+        }
+        .container .content-para {
+            padding-left: 1rem;
+            line-height: 20px;
+        }
+        .container .content-image {
+            text-align: end;
+            padding: 15px;
+        }
+        .container .first-content{
+            margin-left: 30rem;
+            margin-top: 2rem;
+            border-top: 3px solid hsl(0, 78%, 62%);
+        }
+        .container .second-content {
+            position: absolute;
+            margin-left:8rem;
+            border-top: 3px solid hsl(180, 62%, 55%);
+        }
+        .container .third-content {
+            position: absolute;
+            margin-left: 52rem;
+            border-top: 3px solid hsl(212, 86%, 64%);
+        }
+        .container .fourth-content {
+            position: absolute;
+            margin-top: 2rem;
+            margin-left: 30rem;
+            border-top: 3px solid hsl(34, 97%, 64%);
+        }
+
+        @media only screen and (max-width:375px) {
+            .container .content {
+                margin: auto;
+                position: relative;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="head-first-line">
+                <p>
+                    Reliable,efficient delivery
+                </p>
+            </div>
+            <div class="head-second-line">
+                <p>
+                    <b>Powered by Technology</b>
+                </p>
+            </div>
+            <div class="head-para">
+                <p>
+                    <small>
+                        Our Artificial intelligence powered tools use millions of project data
+                        <br><span>points to ensure that your project is successful</span>
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div class="first-content content">
+            <div class="first-content-line content-line">
+                <p>
+                    <b>Team Builder</b>
+                </p>
+            </div>
+            <div class="first-content-para content-para">
+                <p>
+                    Scans our talent network to create the <br>
+                    optional team for your project
+                </p>
+            </div>
+            <div class="first-image content-image">
+                <img src="images/icon-team-builder.svg" alt="">
+            </div>
+        </div>
+        <div class="second-content content">
+            <div class="second-content-line content-line">
+                <p>
+                    <b>Supervisor</b>
+                </p>
+            </div>
+            <div class="second-content-para content-para">
+                <p>
+                    Monitors activity to identity project <br>
+                    roadblocks
+                </p>
+            </div>
+            <div class="second-image content-image">
+                <img src="images/icon-supervisor.svg" alt="">
+            </div>
+        </div>
+        <div class="third-content content">
+            <div class="third-content-line content-line">
+                <p>
+                    <b>Calculator</b>
+                </p>
+            </div>
+            <div class="third-content-para content-para">
+                <p>
+                    Uses data from post projects to provide <br>
+                    better delivery estimates
+                </p>
+            </div>
+            <div class="second-image content-image">
+                <img src="images/icon-calculator.svg" alt="">
+            </div>
+        </div>
+        <div class="fourth-content content">
+            <div class="fourth-content-line content-line">
+                <p>
+                    <b>Karma</b>
+                </p>
+            </div>
+            <div class="fourth-content-para content-para">
+                <p>
+                    Regularly evaluates our talent to ensure <br>
+                    quality
+                </p>
+            </div>
+            <div class="fourth-image content-image">
+                <img src="images/icon-karma.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

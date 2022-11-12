@@ -1,0 +1,127 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+   margin: 10px 60px 10px 60px;
+}
+.main header .menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px 10px 20px;
+}
+.main header .menu ul li #menu-image{
+    display: none;
+}
+.main header .menu ul li a{
+    text-decoration: none;
+    color:  hsl(236, 13%, 42%);
+}
+.main header .menu ul li a:hover{
+    color: orange;
+}
+.main .container {
+    margin-top: 5px;
+}
+.main .container .image1 {
+    grid-area: image;
+    margin-left: 15px;
+}
+.main .container .image2 {
+    display: none;
+}
+.main .container .new-products {
+    grid-area: new-products;
+    border: 1px solid hsl(240, 100%, 5%);
+    background-color:hsl(240, 100%, 5%);
+    padding: 20px;
+    margin-right:80px;
+}
+.main .container .new-products ul li h3 {
+    color: hsl(36, 100%, 99%);
+}
+.main .container .new-products ul li p{
+    opacity: 0.70;
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding-bottom: 20px;
+}
+.main .container .future {
+    grid-area: future;
+    font-size:30px;
+    margin-left: 15px;
+    line-height: 0.90;
+    color: hsl(240, 100%, 5%);
+}
+.main .container .para{
+    grid-area: para;
+    word-spacing:2px;
+    color: hsl(236, 13%, 42%);
+}
+.main .container .product1 {
+    grid-area: productfirst;
+    margin-left: 15px;
+}
+.main .container .product ul li {
+    list-style-type: none;
+    float: left;
+}
+.main .container .product ul li h1 {
+    color: hsl(233, 8%, 79%);
+}
+.main .container .product ul li h3{
+    color: hsl(240, 100%, 5%);
+}
+.main .container .product ul li p{
+    color: hsl(236, 13%, 42%);
+}
+.main .container .product2 {
+    grid-area: productsecond;
+}
+.main .container .product3 {
+    grid-area: productthird;
+}
+.main .container{
+    display: grid;
+    grid-template-areas: 'image image new-products''future para new-products''productfirst productsecond productthird';
+    gap: 20px;
+}
+.main .container .new-products ul li {
+    list-style-type: none;
+    color: hsl(240, 100%, 5%);
+    padding: 10px 0;
+}
+.main .container .new-products ul li p {
+    color: hsl(36, 100%, 99%);
+}
+.main .container .para button {
+    padding: 7px 20px;
+    border: none;
+    letter-spacing: 2px;
+    color: white;
+    background-color:orangered;
+}
+@media (max-width:375px){
+    body {
+        margin:10px;
+    }
+    .main header .menu ul li #menu-image{
+        display: inline-block;
+        position: fixed;
+        right: 0%;
+    }
+    
+    .main header .menu ul li p{
+        display: none;
+    }
+    .main .container .image1 {
+        display: none;
+    }
+    .main .container .image2 {
+        display: grid;
+        grid-area: image;
+    }
+    .main .container {
+        display: grid;
+        grid-template-areas: 'image''future''para''new-products''productfirst''productsecond''productthird';
+    } 
+}

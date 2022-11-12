@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        ul li {
+            color: rgba(0, 0, 0, 0.726);
+            list-style-type: none;
+            display: inline-block;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        ul li:hover {
+            color: rgba(0, 0, 255, 0.719);
+        }
+        ul li h2:hover {
+            color: rgba(0, 0, 0, 0.726); 
+        }
+        ul li h2 {
+            margin-right: 300px;
+            margin-left: 100px;
+        }
+        ul li {
+            padding: 20px;
+        }
+        ul li .dropdown .drop-content ,ul li .dropdown1 .drop-content1 {
+            display: none;
+            position: absolute;
+            font-size: small;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px black;
+            margin-top: 0px;
+            padding: 0 10px ;
+        }
+        ul li .dropdown:hover .drop-content ,ul li .dropdown1:hover .drop-content1{
+            display: block;
+            color: rgba(0, 0, 0, 0.726); 
+        }
+        ul li .dropdown .hr,
+        ul li .dropdown1 .hr{
+            border-bottom: 1px solid rgb(197, 192, 192);
+            padding: 10px 0; 
+        }
+        ul li .arrowdown {
+            border: solid rgba(0, 0, 0, 0.726);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <h2>
+                Awesome<span style="color: rgba(0, 0, 255, 0.719) ;">logo</span>
+            </h2>
+        </li>
+        <li style="color: rgba(0, 0, 255, 0.719) ;">
+            Home
+        </li>
+        <li>
+            <div class="dropdown">
+                <p>categories <i class="arrowdown"></i></p>
+                <div class="drop-content">
+                    <p>Actions</p>
+                    <p class="hr">Something else here</p>
+                    <p class="hr">Seperated link</p>
+                    <p>One more Seperated link</p>
+                </div>
+                <li>
+                    <div class="dropdown1">
+                        <p>Blog <i class="arrowdown"></i></p>
+                        <div class="drop-content1">
+                            <p>Some categories</p>
+                            <p class="hr">Some another categories</p>
+                            <p class="hr">Seperated link</p>
+                            <p>One more Seperated link</p>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            
+        </li>
+        <li>
+            About
+        </li>
+        <li>
+            Signin
+        </li>
+    </ul>
+</body>
+</html>

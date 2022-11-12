@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container div {
+            padding: 1.3rem;
+        }
+        .container .first-para .title ,
+        .container .first-para .footer {
+            border:1px solid rgba(0, 0, 0, 0.24) ;
+            border-radius: 2px;
+            background-color:rgb(250, 240, 240);
+            padding: 10px;
+            margin: 0;
+            width: 250px;
+        }
+        .container .first-para .content {
+            border-left: 1px solid rgba(0, 0, 0, 0.24) ;
+            border-right: 1px solid rgba(0, 0, 0, 0.24) ;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 0;
+            width: 250px;
+            height: 272px;
+        }
+        .container .second-para p ,
+        .container .third-para p ,
+        .container .forth-para p{
+            width: 250px;
+            height: 350px;
+            padding: 10px;
+            border:1px solid rgba(0, 0, 0, 0.24) ;
+            border-radius: 2px;
+            margin: 0%;
+            background-color:rgb(250, 240, 240);
+        }
+        
+        @media only screen and (min-width:100px) {
+            .container .first-para .title ,
+            .container .first-para .footer {
+            width: 100%;
+        }
+            .container .first-para .content {
+            width: 100%;
+            height: auto;
+        }
+            .container .second-para p ,
+            .container .third-para p ,
+            .container .forth-para p{
+            width: 100%;
+            height: auto;
+        }
+        }
+        @media only screen and (min-width:1000px) {
+            .container .first-para .title ,
+            .container .first-para .footer {
+            width: 180px;
+        }
+            .container .first-para .content {
+            width: 180px;
+            height: 272px;
+        }
+            .container .second-para p ,
+            .container .third-para p ,
+            .container .forth-para p{
+            width: 185px;
+            height: 350px;
+        }
+        }
+        @media only screen and (min-width:1270px) {
+            .container .first-para .title ,
+            .container .first-para .footer {
+            width: 250px;
+        }
+            .container .first-para .content {
+            width: 250px;
+            height: 272px;
+        }
+            .container .second-para p ,
+            .container .third-para p ,
+            .container .forth-para p{
+            width: 250px;
+            height: 350px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-para">
+            <p class="title">Title</p>
+            <p class="content">
+                Apple pie jelly-o croissant. Carrot cake sugar plum sweet roll ice cream brownie muffin.
+            </p>
+            <p class="footer">Footer</p>
+        </div>
+        <div class="second-para">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus itaque saepe repellendus unde obcaecati cupiditate ullam suscipit, pariatur eveniet officiis eos voluptate accusantium praesentium molestias? Eaque nulla mollitia ab assumenda doloremque enim necessitatibus dolorum, expedita minima repellendus nam temporibus explicabo perferendis iste fugiat, velit ipsam itaque debitis quisquam laborum, autem dolorem! Temporibus, ratione. Voluptates.
+            </p>
+        </div>
+        <div class="third-para">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam nihil dicta perferendis cum officia quo.
+            </p>
+        </div>
+        <div class="forth-para">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quasi, soluta asperiores perferendis debitis quod quibusdam, maxime et aspernatur veniam porro consequuntur itaque. In assumenda dolorem quod corporis repudiandae quas tenetur a debitis, eos id?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

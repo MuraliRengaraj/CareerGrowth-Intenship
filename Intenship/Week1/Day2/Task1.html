@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wask1</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+        .container {
+            width: 500px;
+            margin: auto;
+            margin-top: 10rem;
+            box-sizing: border-box;
+            box-shadow: 0 0 7px black;
+        }
+        .container ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin:40px 0 100px 0;
+            padding: 0 4rem;
+        }
+        .container ul {
+            text-align: center;
+            position: relative;
+        }
+        .container p {
+            margin-top: 3rem;
+            position: absolute;
+            display:none;
+        }
+        .container ul .tab1:hover .t1,
+        .container ul .tab2:hover .t2,
+        .container ul .tab3:hover .t3{
+            display: block;
+        }
+        .container ul .tab1:hover,
+        .container ul .tab2:hover,
+        .container ul .tab3:hover{
+            border-bottom: 2px solid gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="tab1">
+                Tab1
+                <p class="t1">
+                    Hello
+                </p>
+            </li>
+            <li class="tab2">
+                Tab2
+                <p class="t2">
+                    Welcome
+                </p>
+            </li>
+            <li class="tab3">
+                Tab3
+                <p class="t3">
+                    Web Development
+                </p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
